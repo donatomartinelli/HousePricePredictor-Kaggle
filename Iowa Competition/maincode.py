@@ -7,8 +7,7 @@ import seaborn as sns
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
-random_seed = 0
-np.random.seed(random_seed)
+
 
 # Setting display options for pandas
 #pd.set_option('display.max_columns', 200)  # Setting the maximum number of displayed columns to 200

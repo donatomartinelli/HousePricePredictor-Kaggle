@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_absolute_error
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder
-#
+
 # Load the Melbourne housing data
 melbourne_file_path = 'C:/Users/donat/Desktop/melb_data.csv'
 data = pd.read_csv(melbourne_file_path) 
