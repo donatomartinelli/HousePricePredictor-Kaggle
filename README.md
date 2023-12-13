@@ -10,7 +10,7 @@ notebooks: Jupyter notebooks for data exploration, cleaning, and model developme
 src: Python scripts for data preprocessing, feature engineering, and model training.
 models: Saved models and model evaluation metrics.
 
-##Data Cleaning and Preprocessing
+## Data Cleaning and Preprocessing
 
 Data Cleaning: The raw datasets are cleaned to handle missing values, outliers, and other anomalies that may affect model performance.
 
