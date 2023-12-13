@@ -1,4 +1,4 @@
-# Kaggle House Prices Prediction Project
+# Kaggle Iowa Competition House Prices Prediction Project
 
 ## Overview
 
