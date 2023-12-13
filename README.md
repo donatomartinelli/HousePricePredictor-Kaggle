@@ -11,6 +11,7 @@ src: Python scripts for data preprocessing, feature engineering, and model train
 models: Saved models and model evaluation metrics.
 
 ##Data Cleaning and Preprocessing
+
 Data Cleaning: The raw datasets are cleaned to handle missing values, outliers, and other anomalies that may affect model performance.
 
 Ordinal Encoding: Categorical variables with an inherent order are encoded using ordinal encoding to preserve the ordinal relationship.
