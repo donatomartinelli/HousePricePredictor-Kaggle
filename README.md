@@ -1,29 +1,31 @@
-# Iowa Housing Kaggle Challenge
+# Kaggle Iowa Competition House Prices Prediction Project
 
 ## Overview
-This project is dedicated to the Kaggle competition for predicting house prices in Iowa. It employs a range of machine learning algorithms, including linear regression, random forests, and neural networks, to analyze and predict housing prices based on a comprehensive dataset.
- 
-## Features
-- **Data Preprocessing**: Scripts for cleaning and preparing the dataset for model training.
-- **Model Implementation**:
-  - *Linear Regression*: Establishes a baseline for prediction accuracy.
-  - *Random Forests*: Leverages ensemble learning for more robust predictions.
-  - *Neural Networks*: Implements deep learning for capturing complex nonlinear patterns in the data.
-- **Performance Evaluation**: Tools for assessing the accuracy and efficiency of each model, including cross-validation scores and error metrics.
-- **Data Cleaning & Feature Engineering**: 
-  - Detailed scripts for handling missing values, outliers, and data normalization.
-  - Techniques for feature selection and engineering to enhance model performance.
 
-- **Data Visualization**:
-  - Interactive plots and graphs for exploring data trends and relationships.
-  - Heatmaps for correlation analysis among different features.
+This repository contains code and documentation for a Kaggle competition focused on predicting house prices. The goal of the competition is to develop a machine learning model that accurately predicts the sale prices of houses based on various features.
 
-- **Model Tuning & Validation**:
-  - Grid search and random search methods for hyperparameter optimization.
-  - K-fold cross-validation for ensuring model reliability and generalizability.
+## Data Cleaning and Preprocessing
 
-- **Results & Insights**:
-  - Comparative analysis of different models based on various metrics like RMSE, MAE, etc.
-  - Insights and interpretations derived from model outcomes to understand key predictors.
+Data Cleaning: The raw datasets are cleaned to handle missing values, outliers, and other anomalies that may affect model performance.
 
+**Ordinal Encoding**: Categorical variables with an inherent order are encoded using ordinal encoding to preserve the ordinal relationship.
 
+**Frequency Encoding**: Categorical variables with high cardinality are encoded based on their frequency to reduce dimensionality.
+
+**One-Hot Encoding**: Remaining categorical variables are one-hot encoded to represent them as binary vectors.
+
+## Feature Engineering
+
+**Correlation Analysis**: Identifying and removing highly correlated features to improve model interpretability and reduce overfitting.
+
+**Mutual Information**: Evaluating the mutual information between features and the target variable to select the most informative features for modeling.
+
+## Model Development
+
+**Random Forest**: Applying the Random Forest algorithm for regression, with hyperparameter tuning to optimize model performance.
+
+**Gradient Boosting**: Implementing Gradient Boosting for regression, also with hyperparameter tuning for optimal results. (Actually the best model with 0.13 RMAE)
+
+## Results
+The final results are assessed based on the RMAE metric, and are displayed in a rolling leaderboard on Kaggle. Currently this code puts me in the 68.7th percentile.
+Further improvements will come along the way.
